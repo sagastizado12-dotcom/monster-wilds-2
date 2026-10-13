@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Monster Wilds II</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#0a0610">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Monster Wilds II">
+<meta name="format-detection" content="telephone=no">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div id="wrap">
+ <div id="screenbox"><div id="stage"><canvas id="game" width="320" height="240"></canvas><div id="battle"><canvas id="bcv" width="320" height="240"></canvas><div id="ebox" class="hpb"></div><div id="pbox" class="hpb"></div></div><div id="fade"></div><div id="ui"></div></div></div>
+ <div id="pad">
+  <div id="dpad"><button data-k="up" class="du">&#9650;</button><button data-k="left" class="dl">&#9664;</button><button data-k="right" class="dr">&#9654;</button><button data-k="down" class="dd">&#9660;</button></div>
+  <div id="mid"><button data-k="start" class="st">MENU</button></div>
+  <div id="ab"><button data-k="b" class="bb">B</button><button data-k="a" class="ba">A</button></div>
+ </div>
+</div>
+<input type="file" id="importFile" accept=".json,application/json" style="display:none">
+<script src="js/data.js"></script><script src="js/scripture.js"></script><script src="js/world.js"></script><script src="js/ambient.js"></script><script src="js/style.js"></script><script src="js/pixnpc.js"></script><script src="js/audio.js"></script><script src="js/fx.js"></script><script src="js/mature.js"></script>
+<script src="js/game.js"></script><script src="js/sisters.js"></script>
+<script>
+if(location.protocol==='http:'||location.protocol==='https:'){const l=document.createElement('link');l.rel='manifest';l.href='manifest.webmanifest';document.head.appendChild(l);
+ if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{});}
+</script>
+</body></html>
